@@ -16,5 +16,5 @@ class PACMAN_API UCSV_FL : public UBlueprintFunctionLibrary
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "CSV")
-	static TArray<FString> ReadCSV(FString FilePath);
+	static TArray<TArray<FString>> ReadCSVTo2DArray(FString FilePath);
 };
