@@ -1,10 +1,10 @@
 #pragma once 
 
 #include "CoreMinimal.h"
-#include "CSVRow.generated.h"
+#include "StringRowStruct.generated.h"
 
 USTRUCT(BlueprintType)
-struct PACMAN_API FCSVRow
+struct PACMAN_API FStringRowStruct : public FTableRowBase
 {
 	GENERATED_BODY()
 
