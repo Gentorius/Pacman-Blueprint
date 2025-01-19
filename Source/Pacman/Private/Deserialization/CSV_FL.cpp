@@ -35,7 +35,7 @@ bool UCSV_FL::ReadCSVToDataTable(const FString& FileName, UDataTable* DataTable)
     }
     catch (const std::exception& e)
     {
-        UE_LOG(LogTemp, Error, TEXT("Error while reading CSV in (%s) to DataTable named (%s). The error log: %hs"), *FileName, *DataTable->GetName, e.what());
+        UE_LOG(LogTemp, Error, TEXT("Error while reading CSV in (%s) to DataTable named (%s). The error log: %hs"), *FileName, DataTable->GetName, e.what());
         return false;
     }
     
