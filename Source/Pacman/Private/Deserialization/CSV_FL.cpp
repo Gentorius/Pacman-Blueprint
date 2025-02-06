@@ -6,10 +6,9 @@
 #include "Misc/Paths.h"
 #include "Structs/StringRowStruct.h"
 
-TArray<FStringRowStruct> UCSV_FL::ReadCSVTo2DArray(FString FileName)
+TArray<FStringRowStruct> UCSV_FL::ReadCSVTo2DArray(const FString FilePath)
 {
     TArray<FStringRowStruct> Result;
-    const FString FilePath = FPaths::ProjectContentDir() + FileName;
 
     if (FString FileContent; FFileHelper::LoadFileToString(FileContent, *FilePath))
     {
