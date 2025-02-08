@@ -16,5 +16,5 @@ public:
     UFUNCTION(BlueprintCallable, Category = "CSV")
     static TArray<FStringRowStruct> ReadCSVTo2DArray(FString FilePath);
     UFUNCTION(BlueprintCallable, Category = "CSV")
-    static bool ReadCSVToDataTable(const FString& FileName, UDataTable* DataTable);
+    static bool DoesFileExist(const FString& FilePath);
 };
